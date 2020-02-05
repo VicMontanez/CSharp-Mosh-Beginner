@@ -6,9 +6,21 @@ namespace TypeConversion
     {
         static void Main(string[] args)
         {
-            var number = "1234";
-            int i = Convert.ToInt32(number);
-            Console.WriteLine(i);
+            // var number = "1234";
+            // int i = Convert.ToInt32(number);
+            // Console.WriteLine(i);
+            try
+            {
+                string str = "true";
+                bool b = Convert.ToBoolean(str);
+                Console.WriteLine(b);
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("The number could not be converted to a byte.");
+            }
+
 
         }
     }
