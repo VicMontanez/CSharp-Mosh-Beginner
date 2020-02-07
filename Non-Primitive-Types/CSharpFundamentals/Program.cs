@@ -7,7 +7,7 @@ namespace CSharpFundamentals
     {
         RegularAirMail = 1,
         RegisteredAirMail = 2,
-        Express =3
+        Express = 3
     }
 
     class Program
@@ -16,6 +16,9 @@ namespace CSharpFundamentals
         {
             var method = ShippingMethod.Express;
             Console.WriteLine((int)method);
+
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId);
         }
     }
 }
