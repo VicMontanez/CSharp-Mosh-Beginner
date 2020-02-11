@@ -15,6 +15,14 @@ namespace CSharpFundamentals
             var index = Array.IndexOf(numbers, 9);
             Console.WriteLine("Index of 9: " + index);
 
+            // Clear()
+            Array.Clear(numbers, 0, 2);
+
+            Console.WriteLine("Effects of Clear()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
+
+
         }
     }
 }
