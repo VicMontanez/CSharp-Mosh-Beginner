@@ -6,20 +6,9 @@ namespace Iterations
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Console.Write("Type your name: ");
-                var input = Console.ReadLine();
-
-                if (!String.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine("@Echo: " + input);
-                    continue;
-                }
-
-                break;
-
-            }
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+                Console.WriteLine(random.Next());
 
         }
     }
