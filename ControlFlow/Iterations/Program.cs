@@ -8,7 +8,7 @@ namespace Iterations
         {
             var random = new Random();
             for (var i = 0; i < 10; i++)
-                Console.Write((char)random.Next(97, 122));
+                Console.Write((char)('a' + random.Next(0, 26)));
             Console.WriteLine();
 
         }
