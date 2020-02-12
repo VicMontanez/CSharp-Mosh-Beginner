@@ -20,6 +20,17 @@ namespace CSharpFundamentals
 
             Console.WriteLine("Count: " + numbers.Count);
 
+
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (number == 1)
+                    numbers.Remove(1);
+            }
+
+            foreach (var number in numbers)
+                Console.WriteLine(numbers);
+
+
         }
     }
 }
