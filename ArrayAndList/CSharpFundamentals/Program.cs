@@ -30,6 +30,8 @@ namespace CSharpFundamentals
             foreach (var number in numbers)
                 Console.WriteLine(numbers);
 
+            numbers.Clear();
+            Console.WriteLine("Count: " + numbers.Count);
 
         }
     }
