@@ -19,7 +19,10 @@ namespace DateNTime
 
           //Properties
           Console.WriteLine("Minutes: " + timeSpan.Minutes);
-            Console.WriteLine("Total Minutes: " + timeSpan.TotalMinutes);          
+            Console.WriteLine("Total Minutes: " + timeSpan.TotalMinutes); 
+
+        //Add
+        Console.WriteLine("Add Example: " + timeSpan.Add(TimeSpan.FromMinutes(8)));         
         }
     }
 }
