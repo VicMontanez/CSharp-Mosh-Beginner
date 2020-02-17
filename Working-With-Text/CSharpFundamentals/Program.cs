@@ -7,6 +7,12 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             var sentence = "This is going to be a really really long text.";
+
+
+
+        }
+        static string SummarizeText(string text)
+        {
             const int maxLength = 20;
 
             if (sentence.Length < maxLength)
@@ -28,8 +34,7 @@ namespace CSharpFundamentals
 
                 var summary = String.Join(" ", summaryWords) + "...";
                 Console.WriteLine(summary);
-
             }
+
         }
     }
-}
