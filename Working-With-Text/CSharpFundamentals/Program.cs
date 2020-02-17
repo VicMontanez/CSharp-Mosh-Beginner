@@ -8,12 +8,14 @@ namespace CSharpFundamentals
         {
             var sentence = "This is going to be a really really long text.";
 
+            var summary = SummarizeText(sentence);
+            Console.WriteLine(summary);
+
 
 
         }
-        static string SummarizeText(string text)
+        static string SummarizeText(string text, int maxLength = 20)
         {
-            const int maxLength = 20;
 
             if (text.Length < maxLength)
                 return text;
