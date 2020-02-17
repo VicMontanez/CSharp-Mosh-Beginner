@@ -31,8 +31,7 @@ namespace CSharpFundamentals
                     break;
             }
 
-            var summary = String.Join(" ", summaryWords) + "...";
-            return summary;
+            return String.Join(" ", summaryWords) + "...";
         }
 
 
