@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CSharpFundamentals
 {
@@ -6,13 +7,9 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            var sentence = "This is going to be a really really long text.";
-
-            var summary = StringUtility.SummarizeText(sentence, 25);
-            Console.WriteLine(summary);
-
-
-
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
         }
     }
 
