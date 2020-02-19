@@ -14,6 +14,8 @@ namespace exercises
 
 
             Console.WriteLine("Reversed name: " + reversed);
+
+            // return reversed;
         }
 
         public static string ReversedName(string name)
@@ -24,7 +26,7 @@ namespace exercises
 
             return new string(array);
 
-            return reversed;
+
         }
     }
 }
