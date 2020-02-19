@@ -18,6 +18,8 @@ namespace CSharpFundamentals
             builder.Remove(0, 10);
             builder.Insert(0, new string('-', 10));
             Console.WriteLine(builder);
+
+            Console.WriteLine("First Char: " + builder[0]);
         }
     }
 
