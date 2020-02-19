@@ -12,6 +12,8 @@ namespace CSharpFundamentals
             builder.AppendLine();
             builder.Append("Header");
             builder.Append('-', 10);
+
+            builder.Replace('-', '+');
             Console.WriteLine(builder);
         }
     }
