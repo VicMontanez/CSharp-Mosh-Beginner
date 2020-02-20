@@ -14,7 +14,15 @@ namespace FileFundamentals
             {
                 //
             }
+            var content = File.ReadAllText(path);
 
+            var fileInfo = new FileInfo(path);
+            fileInfo.CopyTo("...");
+            fileInfo.Delete();
+            if (fileInfo.Exists)
+            {
+                // Do something
+            }
         }
     }
 }
