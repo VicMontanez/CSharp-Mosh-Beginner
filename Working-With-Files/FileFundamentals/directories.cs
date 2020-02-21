@@ -17,6 +17,8 @@ namespace CSharpFundamentals
             foreach (var directory in directories)
                 Console.WriteLine(directory);
 
+            Directory.Exists("...");
+
         }
     }
 }
