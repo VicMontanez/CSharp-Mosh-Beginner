@@ -3,12 +3,9 @@
 
 namespace CSharpFundamentals
 {
-    public class Person
-    {
-        public int Age;
-    }
 
-    class Program
+
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -16,9 +13,9 @@ namespace CSharpFundamentals
             Increment(number);
             Console.WriteLine(number);
 
-            var person = new Person(){Age = 20};
+            var person = new Person() { Age = 20 };
             MakeOld(person);
-            Console.WriteLine(person.Age)
+            Console.WriteLine(person.Age);
         }
 
         public static void Increment(int number)
